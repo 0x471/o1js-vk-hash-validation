@@ -1,7 +1,7 @@
 {
-  "name": "vk-playground",
+  "name": "vk-hash-validation",
   "version": "0.1.0",
-  "description": "",
+  "description": "Demonstrating verification key validation in o1js",
   "author": "",
   "license": "Apache-2.0",
   "keywords": [
@@ -21,7 +21,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "testw": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
     "lint": "npx eslint src/* --fix",
-    "vk-hash-mismatch": "npm run build && node build/src/vkHashMismatch.js"
+    "vk-hash-validation": "npm run build && node build/src/vkHashValidation.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
