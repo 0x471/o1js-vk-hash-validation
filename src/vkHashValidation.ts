@@ -12,7 +12,7 @@ import {
     Field,
   } from 'o1js';
   
-  class SelfUpdater extends SmartContract {
+  export class SelfUpdater extends SmartContract {
     init() {
       super.init();
       this.account.permissions.set({
