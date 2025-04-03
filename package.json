@@ -21,7 +21,9 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "testw": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
     "lint": "npx eslint src/* --fix",
-    "vk-hash-validation": "npm run build && node build/src/vkHashValidation.js"
+    "deploy": "npm run build && node --experimental-vm-modules build/src/scripts/deploy-selfupdater.js vk-hash-validation",
+    "interact-local": "npm run build && node --experimental-vm-modules build/src/scripts/interact.js",
+    "interact-devnet": "npm run build && node --experimental-vm-modules build/src/scripts/interact-devnet.js vk-hash-validation"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
